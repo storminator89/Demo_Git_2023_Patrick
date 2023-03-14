@@ -18,6 +18,5 @@ jobs:
           fetch-depth: 2
       - name: Run a deploy script
         run: |
-          php ./build/push-to-jobrouter.php "${{ env.jr_process_name }}" "${{ env.jr_process_version }}" "${{ secrets.JR_URL }}" "${{ secrets.JR_USER }}" "${{ secrets.JR_PASSWORD }}"
-      - name: cURL AxiosJS
-        uses: indiesdev/curl@v1.1
+          php ./build/push-to-jobrouter.php "${{ env.jr_process_name }}" "${{ env.jr_process_version }}" "${{ secrets.JR_URL }}" "${{ secrets.JR_USERNAME }}" "${{ secrets.JR_PASSWORD }}"
+
